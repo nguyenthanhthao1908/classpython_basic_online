@@ -1,5 +1,5 @@
 
-from datetime import datetime       #class datetime from module datetime
+from datetime import datetime       #from datetime from module datetime
 import pytz                         #truy cap thu vien pytz
 
 local = datetime.now()              #tra ve ngay-gio hien tai
