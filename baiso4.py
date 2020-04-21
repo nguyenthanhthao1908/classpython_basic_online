@@ -1,23 +1,11 @@
+"""Bài 04:
+    Viết chương trình sinh ra một chuỗi từ 2 ký tự đầu và 2 ký tự cuối trong chuỗi được nhập vào,
+    nếu độ dài chuỗi nhỏ hơn 2 thì in ra chuỗi rỗng.
 """
-Bài 4. Lập trình thực hiện các công việc sau:
-    Nhập 3 số a, b, c bất kì
-    Hãy kiểm tra xem ba số đó có phải là độ dài của các cạnh của một tam giác hay không?
-    Nếu đúng là tam giác thì xác định là tam giác vuông hay không?
-"""
-print(" Pls enter three sides of the triangle!!!")
-a = float(input("enter first side: "))
-b = float(input("enter second side: "))
-c = float(input("enter three side: "))
-
-condition1 = a > 0 and b > 0 and c > 0
-condition2 = a + b > c > 0
-condition3 = a + c > b > 0
-condition4 = b + c > a > 0
-
-if  condition1 and condition2 and condition3 and condition4:
-    if (a**2 + b**2 == c**2) or (a**2 + c**2 == b**2) or (b**2 + c**2 == a**2):
-        print("Omg, this is a right triangle!!!")
-    else:
-        print("This is sides a Triangle!!!")
+S4 = input("Enter a string:")
+if len(S4) < 2:
+    print("String received = empty. Pls enter string len > 2!!!")
+elif len(S4) == 2:
+    print("String received is:", S4[0:2])
 else:
-    print("Srrr, This is not a triangle!!!")
+    print("String received is:", S4[0:2] + S4[-2:])
