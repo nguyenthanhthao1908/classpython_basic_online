@@ -12,7 +12,7 @@ c = float(input("c = "))
 
 if a == 0:
     print("This is not quadratic equations!!")
-    print('The quadratic equations has solution is: x={}'.format(-c/b))
+    print('The equations has solution is: x={}'.format(-c/b))
 else:
     delta = b**2 - 4*a*c
     if delta > 0:
